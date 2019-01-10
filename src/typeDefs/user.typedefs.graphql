@@ -1,11 +1,11 @@
 scalar Binary
-type User{
+type User {
     userId: Int!
     favs: Binary!
     ingredient_id: Int!
     grocery_is:Int!
 }
 
-type Query{
+type Query {
     user(id: Int): User
 }
