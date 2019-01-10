@@ -1,0 +1,16 @@
+type Grocery {
+    grocery_is: Int!
+    name: String!
+    img: Binary!
+    desc: String
+    slug:Binary!
+    created_at:Date
+    updated_at:Date
+    id_1:Int!
+    favs: Binary!
+}
+
+type Query {
+    grocery(id:Int):Grocery
+
+}

@@ -1,0 +1,11 @@
+type Favorite {
+    ingredient_id: Int!
+    userId: Int!
+    favs: Binary!
+    grocery_id:Int!
+}
+
+type Query {
+    favorite(id:Int):Favorite
+
+}

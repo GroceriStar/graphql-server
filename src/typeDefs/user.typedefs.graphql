@@ -1,0 +1,11 @@
+scalar Binary
+type User {
+    userId: Int!
+    favs: Binary!
+    ingredient_id: Int!
+    grocery_is:Int!
+}
+
+type Query {
+    user(id: Int): User
+}
