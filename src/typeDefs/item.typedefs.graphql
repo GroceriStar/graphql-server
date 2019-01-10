@@ -1,4 +1,4 @@
-type Item{
+type Item {
     item_id: Int!
     name: String!
     description: String
@@ -6,6 +6,6 @@ type Item{
     purchase: Binary!
 }
 
-type Query{
+type Query {
     item(id: Int):Item
 }
