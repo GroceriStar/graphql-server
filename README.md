@@ -1,8 +1,11 @@
 # graphql-server
 
 
-static data: imported from @groceristar/groceristar-fetch plugin
-More about this plugin here: https://medium.com/groceristar/groceristar-fetch-small-module-that-weve-created-8b4a62bd5d7b
+static data: imported from `@groceristar/groceristar-fetch` plugin
+More about this plugin [here](https://medium.com/groceristar/groceristar-fetch-small-module-that-weve-created-8b4a62bd5d7b): 
+
+#### schema
+![schema](https://raw.githubusercontent.com/ChickenKyiv/database-visuals/master/Groceristar%20%20%20SqlDBM.png)
 
 
 database(we'll use it later):
