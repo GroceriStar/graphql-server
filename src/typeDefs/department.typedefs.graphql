@@ -1,5 +1,5 @@
 scalar Date
-type Department{
+type Department {
     department_id: Int!
     name: String!
     desc:String
