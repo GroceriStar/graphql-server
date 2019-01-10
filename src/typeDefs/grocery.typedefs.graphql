@@ -1,4 +1,4 @@
-type Grocery{
+type Grocery {
     grocery_is: Int!
     name: String!
     img: Binary!
@@ -10,7 +10,7 @@ type Grocery{
     favs: Binary!
 }
 
-type Query{
+type Query {
     grocery(id:Int):Grocery
 
 }
