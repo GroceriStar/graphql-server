@@ -1,0 +1,7 @@
+type User_Grocery {
+  user_id: Int!
+}
+
+type Query {
+  user_grocery(id: Int!): User_Grocery!
+}

@@ -1,0 +1,13 @@
+scalar Date
+type Department{
+    department_id: Int!
+    name: String!
+    desc:String
+    created_at: Date!
+    updated_at: Date!
+}
+
+type Query {
+    department(id:Int):Department
+
+}

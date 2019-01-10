@@ -1,12 +1,25 @@
-const express = require('express');
+import {
+  GraphQLServer,
+} from 'graphql-yoga';
 
-const app = express();
-const port = process.env.PORT || 3000;
-app.get('/', (req, res) => {
-  res.send({
-    msg: 'GraphQl',
-  });
+import {
+  default as typeDefs,
+} from './src/typeDefs';
+
+import {
+  default as resolvers,
+} from './src/resolvers';
+
+
+const options = {
+  port: 3000,
+};
+
+const server = new GraphQLServer({
+  typeDefs,
+  resolvers,
 });
-app.listen(port, () => {
-  console.log(`GraphQL server is running at ${port}`);
-});
+
+server
+  .start(options, () => console.log(`Server is running ⚡ on localhost:${options.port}`))
+  .catch(err => console.error('connection Error', err));
