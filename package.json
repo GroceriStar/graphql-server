@@ -23,6 +23,7 @@
     "eslint-plugin-import": "^2.14.0"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "graphql-yoga": "^1.16.9"
   }
 }
