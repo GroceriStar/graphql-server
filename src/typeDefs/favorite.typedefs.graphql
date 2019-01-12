@@ -6,6 +6,6 @@ type Favorite {
 }
 
 type Query {
-    favorite(id:Int):Favorite
+    favorite(id:Int!):Favorite
 
 }
