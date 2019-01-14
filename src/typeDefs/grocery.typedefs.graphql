@@ -1,5 +1,5 @@
 type Grocery {
-    grocery_is: Int!
+    grocery_id: Int!
     name: String!
     img: Binary!
     desc: String
@@ -11,6 +11,6 @@ type Grocery {
 }
 
 type Query {
-    grocery(id:Int):Grocery
+    grocery(id:Int!):Grocery
 
 }

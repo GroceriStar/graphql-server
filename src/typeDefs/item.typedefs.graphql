@@ -7,5 +7,5 @@ type Item {
 }
 
 type Query {
-    item(id: Int):Item
+    item(id: Int!):Item
 }
