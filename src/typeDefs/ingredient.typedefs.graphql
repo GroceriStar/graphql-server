@@ -1,0 +1,15 @@
+type Ingredient {
+    ingredient_id: Int!
+    favs: String!
+    name: String
+    description: String
+    custom: Binary!
+    created_at: Date
+    updated_at: Date
+    id_1: Int
+    department_id: Int!
+}
+
+type Query {
+    ingredient(id: Int!):Ingredient
+}
