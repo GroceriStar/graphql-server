@@ -1,0 +1,2 @@
+getDepartmentsGraphQLKey
+getDepartmentsGraphQL
