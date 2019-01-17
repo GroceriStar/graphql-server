@@ -1,9 +1,8 @@
-import data from './../data/item.data'
+import data from '../data/item.data';
 
-export default{
-    Query:{
+export default {
+  Query: {
 
 
-
-    }
-}
+  },
+};
