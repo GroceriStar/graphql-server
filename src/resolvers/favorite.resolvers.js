@@ -1,9 +1,8 @@
-import data from './../data/favorite.data'
+import data from '../data/favorite.data';
 
-export default{
-    Query:{
+export default {
+  Query: {
 
 
-
-    }
-}
+  },
+};

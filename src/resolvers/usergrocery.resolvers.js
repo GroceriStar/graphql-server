@@ -1,9 +1,8 @@
-import data from './../data/usergrocery.data'
+import data from '../data/usergrocery.data';
 
-export default{
-    Query:{
+export default {
+  Query: {
 
 
-
-    }
-}
+  },
+};
