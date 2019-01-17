@@ -1,12 +1,17 @@
 
-const { groceristar } = require('@groceristar/groceristar-fetch')
-const departments = groceristar.getDepartments();
+// const { groceristar } = require('@groceristar/groceristar-fetch')
+// const departments = groceristar.getDepartments();
+//
+//
+// export default departments
 
 
-export default departments
+const { getDepartments } = require('./selector');
 
 
+// here we'll do any additional operations if we need it to do
 
+// @TODO delete it when we'll connect fetch and test everything
 // export default {
 //     departments:[
 //         {
