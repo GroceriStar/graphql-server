@@ -18,6 +18,10 @@ const getDepartments = () => {
 // grocery lists
 const getGroceries = () => {
   const groceries = groceristar.getGrocery();
+  //const groceries = groceristar.getGroceryGraphQLKey();
+//   const groceries = groceristar.getGroceryGraphQL();
+  
+  
   return groceries;
 };
 
@@ -25,12 +29,18 @@ const getGroceries = () => {
 // ingredients
 const getIngredients = () => {
   const ingredients = groceristar.getIngredients();
+  //const ingredients = groceristar.getIngredientsGraphQL();
+  //const ingredients = groceristar.getIngredientsGraphQLKey();
+  
   return ingredients;
 };
 
 // users
 const getUsers = () => {
   const users = groceristar.getUsers();
+  //const users = groceristar.getUsersGraphQL();
+  //const users = groceristar.getUsersGraphQLKey();
+  
   return users;
 };
 
