@@ -11,5 +11,5 @@ type Ingredient {
 }
 
 type Query {
-    ingredient(id: Int!):Ingredient
+    ingredient(id: Int):[Ingredient]
 }

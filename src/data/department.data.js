@@ -1,3 +1,3 @@
 const { getDepartments } = require('./selector');
 
-module.export = getDepartments;
+module.exports = getDepartments;

@@ -1,3 +1,4 @@
 const { getIngredients } = require('./selector');
 
-module.export = getIngredients;
+console.log(getIngredients())
+module.exports = getIngredients;

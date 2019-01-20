@@ -11,6 +11,6 @@ type Grocery {
 }
 
 type Query {
-    grocery(id:Int!):Grocery
+    grocery(id:Int):[Grocery]
 
 }
