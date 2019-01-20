@@ -4,16 +4,16 @@ type Department {
     name: String!
     desc:String
     created_at: Date
-    updated_at: Date!
+    updated_at: Date
 }
 
 type Query {
-    departments(id:Int!):[Department!]!
+    departments(id:Int):[Department]!
 }
 
 
 type Mutation{
-    createDepartment(department_id:Int!,name:String!,desc:String!, created_at:Date, updated_at:Date):Department!,
-    updateDepartment(department_id:Int!,name:String!,desc:String!, created_at:Date, updated_at:Date):Department!,
-    removeDepartment(department_id:Int!):Department!
+    createDepartment(department_id:Int!,name:String!,desc:String!, created_at:Date, updated_at:Date):Department!
+    updateDepartment(department_id:Int!,name:String!,desc:String!, created_at:Date, updated_at:Date):[Department]!
+    removeDepartment(department_id:Int!):[Department]!
 }

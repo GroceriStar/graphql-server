@@ -1,37 +1,50 @@
-import data from '../data/department.data';
+import getDepartments from '../data/department.data';
 
 export default {
   Query: {
     departments(parent, args, ctx, info) {
+      // fetch all the departments
+      const departments = getDepartments();
       if (!args.id) {
-        return data.departments;
+        return departments;
       }
-
-      for (let i = 0; i < data.departments.length; i++) {
-        if (data.departments[i].department_id === args.id) {
-          return [data.departments[i]];
-        }
-      }
+      return departments.filter((d)=>{
+        return d.department_id == args.id;
+      })
     },
   },
   Mutation: {
     createDepartment(parent, args, ctx, info) {
-      let newDepartment = {};
-      if (args) {
-        newDepartment = args;
-        newDepartment.created_at = Date.now();
-        newDepartment.updated_at = Date.now();
-        data.departments.push(newDepartment);
+      const departments = getDepartments();
+      if (args.id) {
+        args.created_at = Date.now();
+        args.updated_at = Date.now();
+        departments.push(args);
       }
       return args;
     },
     updateDepartment(parent, args, ctx, info) {
+      const departments = getDepartments();
       if (args) {
-        // find the department that has the args.department_id, an update its data
+        // update a department by a given id
+        if(!args.id){
+          return "please provide a department id"
+        }
+        return departments.map((d)=>{
+          if (d.department_id == args.id){
+            d.name = args.name;
+            d.desc = args.desc;
+          }
+          return d;
+        })
       }
     },
     removeDepartment(parent, args, ctx, info) {
-      // find the department with the given id and remove it from the database/static_data
+      // find the department with the given id and remove it
+      const departments = getDepartments();
+      return departments.filter(d => {
+        return d!==args.id;
+      })
     },
   },
 };
