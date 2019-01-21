@@ -1,5 +1,5 @@
 # graphql-server
-
+[![Build Status](https://travis-ci.org/GroceriStar/graphql-server.svg?branch=master)](https://travis-ci.org/GroceriStar/graphql-server)
 
 ### Data
 
