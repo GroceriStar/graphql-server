@@ -4,6 +4,7 @@ import {
   mergeTypes,
 } from 'merge-graphql-schemas';
 
-const typesArray = fileLoader(path.join(__dirname, './'));
+const typesArray  = fileLoader(path.join(__dirname, './'));
 const typesMerged = mergeTypes(typesArray);
+
 export default typesMerged;

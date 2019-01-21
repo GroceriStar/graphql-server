@@ -5,7 +5,7 @@
 
 #### Static data
 imported from `@groceristar/groceristar-fetch` plugin
-More about this plugin [here](https://medium.com/groceristar/groceristar-fetch-small-module-that-weve-created-8b4a62bd5d7b): 
+More about this plugin [here](https://medium.com/groceristar/groceristar-fetch-small-module-that-weve-created-8b4a62bd5d7b):
 
 #### Database schema
 ![schema](https://raw.githubusercontent.com/ChickenKyiv/database-visuals/master/Groceristar%20%20%20SqlDBM.png)
@@ -44,3 +44,6 @@ You can explore all schema types
 
 ### GraphQL Resources
 I have some collection of tutorials, websites, related to GraphQL topic, storing it here: https://github.com/ChickenKyiv/awesome-graphql-beginner-links
+
+
+as default webpack config didn't support babel 7 yet, we have both versions at package.json
