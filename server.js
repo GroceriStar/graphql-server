@@ -21,5 +21,7 @@ const server = new GraphQLServer({
 });
 
 server
-  .start(options, () => console.log(`Server is running ⚡ on localhost:${options.port}`))
+  .start(options, () =>
+    console.log(`Server is running ⚡ on localhost:${options.port}`)
+  )
   .catch(err => console.error('connection Error', err));

@@ -1,43 +1,43 @@
 // this is a file where we'll keep methods, that we using from `fetch` plugin
 // it will save time for us later.
 
-const { groceristar } = require('@groceristar/groceristar-fetch');
+const { graphQL } = require('@groceristar/groceristar-fetch');
 
 // departments
 
 const getDepartments = () => {
-  // const departments = groceristar.getDepartments();
+  // const departments = graphQL.getDepartments();
   // @TODO pick one of this methods. First return id as Integer, second return it as `key`
 
-  const departments = groceristar.getDepartmentsGraphQL();
-  // const departments = groceristar.getDepartmentsGraphQLKey();
+  const departments = graphQL.getDepartmentsGraphQL();
+  // const departments = graphQL.getDepartmentsGraphQLKey();
   return departments;
 };
 
 
 // grocery lists
 const getGroceries = () => {
-  const groceries = groceristar.getGroceryGraphQL();
-  //const groceries = groceristar.getGroceryGraphQLKey();
-//   const groceries = groceristar.getGroceryGraphQL();
-  
-  
+  const groceries = graphQL.getGroceryGraphQL();
+  //const groceries = graphQL.getGroceryGraphQLKey();
+//   const groceries = graphQL.getGroceryGraphQL();
+
+
   return groceries;
 };
 
 
 // ingredients
 const getIngredients = () => {
-  const ingredients = groceristar. getIngredientsGraphQL();
-  //const ingredients = groceristar.getIngredientsGraphQL();
-  //const ingredients = groceristar.getIngredientsGraphQLKey();
+  const ingredients = graphQL. getIngredientsGraphQL();
+  //const ingredients = graphQL.getIngredientsGraphQL();
+  //const ingredients = graphQL.getIngredientsGraphQLKey();
   return ingredients;
 };
 
 // users
 const getUsers = () => {
-  const users = groceristar.getUsersGraphQL();
-  //const users = groceristar.getUsersGraphQLKey();
+  const users = graphQL.getUsersGraphQL();
+  //const users = graphQL.getUsersGraphQLKey();
   return users;
 };
 
@@ -46,13 +46,13 @@ const getUsers = () => {
 // I can't find methods for this in the fetch
 
 // const getItems = () => {
-//  const items = groceristar.getItems ();
+//  const items = graphQL.getItems ();
 //  return items;
 // }
 
 // favorites
 // const getFavorites = () => {
-//  const favorites = groceristar.getFavorites ();
+//  const favorites = graphQL.getFavorites ();
 //  return favorites;
 // }
 
