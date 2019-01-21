@@ -47,3 +47,16 @@ I have some collection of tutorials, websites, related to GraphQL topic, storing
 
 
 as default webpack config didn't support babel 7 yet, we have both versions at package.json
+
+
+install?? looks like it's old version
+// "babel-plugin-syntax-async-functions": "^6.13.0",
+// "babel-plugin-transform-regenerator": "^6.26.0",
+//
+//     "plugins": [
+// 		"syntax-async-functions",
+// 		"transform-regenerator"
+//   ]
+//
+https://itnext.io/building-a-graphql-api-using-graphql-yoga-lambda-and-mongodb-c0c195621f47
+https://medium.com/@xoor/coding-a-graphql-api-with-node-js-c02d617f49f4

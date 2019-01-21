@@ -20,6 +20,11 @@ const server = new GraphQLServer({
   resolvers,
 });
 
+
+server.get('/status', (req, res) => {
+  res.send({ status: 'ok' })
+})
+
 server
   .start(options, () =>
     console.log(`Server is running ⚡ on localhost:${options.port}`)
