@@ -3,7 +3,7 @@
 module.exports = {
   verbose: true,
   collectCoverageFrom: ["src/**"],
-  coverageReporters: ["json", "lcov", "text-summary", "html"],
+  coverageReporters: ["json", "lcov", "text-summary"],
   testURL: "http://localhost",
   testPathIgnorePatterns: [
     "/lib/"

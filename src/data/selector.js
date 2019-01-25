@@ -28,7 +28,10 @@ const getGroceries = () => {
 
 // ingredients
 const getIngredients = () => {
-  const ingredients = graphQL. getIngredientsGraphQL();
+  // in order to make debuging process more quickier. I'm limiting right now number of returning ingredients
+  // @TODO address that later.
+  const limit = true;
+  const ingredients = graphQL. getIngredientsGraphQL(limit);
   //const ingredients = graphQL.getIngredientsGraphQL();
   //const ingredients = graphQL.getIngredientsGraphQLKey();
   return ingredients;

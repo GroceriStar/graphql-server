@@ -7,7 +7,7 @@
     "start": "nodemon server.js --exec babel-node",
     "lint": "eslint . --fix",
     "lint:i": "eslint src",
-    "test": "jest --detectOpenHandles"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
