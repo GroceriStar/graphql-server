@@ -1,4 +1,5 @@
-import getIngredients from '../data/ingredient.data';
+// import getIngredients from '../data/ingredient.data';
+import { getIngredients } from '../data/selector';
 
 export default {
   Query: {
@@ -13,6 +14,6 @@ export default {
         return d.ingredient_id == args.id;
       })
     },
-    
+
   },
 };

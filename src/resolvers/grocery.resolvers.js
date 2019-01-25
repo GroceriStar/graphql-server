@@ -1,4 +1,5 @@
-import getGroceries from '../data/grocery.data';
+// import getGroceries from '../data/grocery.data';
+import { getGroceries } from '../data/selector';
 
 export default {
   Query: {
@@ -13,6 +14,6 @@ export default {
         return d.grocery_id == args.id;
       })
     },
-    
+
   },
 };

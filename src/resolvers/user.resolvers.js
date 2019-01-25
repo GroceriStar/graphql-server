@@ -1,8 +1,9 @@
-import getUsers from '../data/user.data';
+// import getUsers from '../data/user.data';
+import { getUsers } from '../data/selector';
 
 export default {
   Query: {
-    
+
     user(parent, args, ctx, info) {
       // fetch all the departments
       const users = getUsers();

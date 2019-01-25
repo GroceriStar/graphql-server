@@ -1,4 +1,5 @@
-import getDepartments from '../data/department.data';
+// import getDepartments from '../data/department.data';
+import { getDepartments } from '../data/selector';
 
 export default {
   Query: {
@@ -53,6 +54,6 @@ export default {
         return d!==args.id;
       })
     },
-    
+
   },
 };
