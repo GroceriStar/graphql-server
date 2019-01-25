@@ -2,6 +2,7 @@ import getGroceries from '../data/grocery.data';
 
 export default {
   Query: {
+
     grocery(parent, args, ctx, info) {
       // fetch all the departments
       const groceries = getGroceries();
@@ -12,5 +13,6 @@ export default {
         return d.grocery_id == args.id;
       })
     },
+    
   },
 };

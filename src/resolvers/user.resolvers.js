@@ -2,6 +2,7 @@ import getUsers from '../data/user.data';
 
 export default {
   Query: {
+    
     user(parent, args, ctx, info) {
       // fetch all the departments
       const users = getUsers();
@@ -12,5 +13,6 @@ export default {
         return d.userId == args.id;
       })
     },
+
   },
 };

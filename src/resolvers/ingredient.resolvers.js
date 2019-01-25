@@ -2,6 +2,7 @@ import getIngredients from '../data/ingredient.data';
 
 export default {
   Query: {
+
     ingredient(parent, args, ctx, info) {
       // fetch all the departments
       const ingredients = getIngredients();
@@ -12,5 +13,6 @@ export default {
         return d.ingredient_id == args.id;
       })
     },
+    
   },
 };
