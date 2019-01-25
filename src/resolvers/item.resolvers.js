@@ -3,7 +3,9 @@ import data from '../data/item.data';
 
 export default {
   Query: {
-    abc(parent, args, ctx, info) {
+    item(parent, args, ctx, info) {
+
+      console.log(data.items)
       // fetch all the departments
       // const departments = getDepartments();
       // if (!args.id) {

@@ -3,7 +3,9 @@ import data from '../data/usergrocery.data';
 
 export default {
   Query: {
-    abc(parent, args, ctx, info) {
+    user_grocery(parent, args, ctx, info) {
+
+      console.log(data.usergroceries)
 
       // fetch all the departments
       // const departments = getDepartments();

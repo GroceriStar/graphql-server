@@ -4,7 +4,9 @@ import data from '../data/favorite.data';
 export default {
   Query: {
 
-    abc(parent, args, ctx, info) {
+    favorite(parent, args, ctx, info) {
+
+      console.log(data.favorites)
       // fetch all the departments
       // const departments = getDepartments();
       // if (!args.id) {
