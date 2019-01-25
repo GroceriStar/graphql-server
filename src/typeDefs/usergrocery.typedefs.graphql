@@ -1,5 +1,6 @@
 type User_Grocery {
   user_id: Int!
+  grocery_id: ID!
 }
 
 type Query {
