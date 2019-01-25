@@ -667,9 +667,9 @@
     to-fast-properties "^2.0.0"
 
 "@groceristar/groceristar-fetch@^1.1.48":
-  version "1.1.55"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.55.tgz#3c46fcf4b08697824b9c53eaee11a3c18003db7d"
-  integrity sha512-4VJw/lw/wRoeLbX6C6WxGmJqW/GYFdnOwvhUVrlH/+pg9PRC6HH5IWDL7ck5zR69pa5u0Utj5Gct93g30Z/aPA==
+  version "1.1.56"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-1.1.56.tgz#6a6f6c3b400a5c1d3a44afbd5babb1c6286f8507"
+  integrity sha512-KjzlFG+LJFyTmSMIjVU46/PARkGCgAYX1Su7a3PCHsjTAPekzujmLx0Q4GQkWI5jYj4JWscKw/JzF9LLsdl1vA==
   dependencies:
     fs "0.0.1-security"
     lodash "^4.17.10"
