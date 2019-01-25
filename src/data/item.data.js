@@ -1,23 +1,38 @@
 
-
-// export default {
-//     departments:[
-//         {
-//             department_id:1,
-//             name: 'd1',
-//             desc:"desc for department1",
-//             created_at: Date.now(),
-//             updated_at: Date.now()
-//         },
-
-//         {
-//             department_id:2,
-//             name: 'd2',
-//             desc:"desc for department2",
-//             created_at: Date.now(),
-//             updated_at: Date.now()
-
-//         },
-//     ]
-
+// type Item {
+//     item_id: Int!
+//     name: String!
+//     description: String
+//     quantity: Int!
+//     purchase: Binary!
 // }
+export default {
+
+    items: [
+        {
+            item_id:1,
+            name: 'Bread',
+            description:"something about the item",
+            quantity: 50,
+            purchase: false
+        },
+
+        {
+            item_id:2,
+            name: 'Milk',
+            description:"something about the item",
+            quantity: 200,
+            purchase: false
+
+        },
+        {
+            item_id:2,
+            name: 'Cheese',
+            description:"something about the item",
+            quantity: 200,
+            purchase: false
+
+        }
+    ]
+
+}

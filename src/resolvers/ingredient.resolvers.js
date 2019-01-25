@@ -10,7 +10,10 @@ export default {
       if (!args.id) {
         return ingredients;
       }
-      return ingredients.filter((d)=>{
+
+      // don't like lines like that, hard to keep in mind
+      // also can be replaced with lodash method
+      return ingredients.filter((d) => {
         return d.ingredient_id == args.id;
       })
     },

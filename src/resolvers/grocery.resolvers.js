@@ -10,7 +10,10 @@ export default {
       if (!args.id) {
         return groceries;
       }
-      return groceries.filter((d)=>{
+
+      // don't like lines like that, hard to keep in mind
+      // also can be replaced with lodash method
+      return groceries.filter((d) => {
         return d.grocery_id == args.id;
       })
     },

@@ -2,25 +2,48 @@
 
 // module.export = getFavorites;
 
+export default {
+    favorites: [
+        {
+            ingredient_id:1,
+            userId: 1,
+            favs:"desc for department1",
+            grocery_id: 1,
 
-// export default {
-//     departments:[
-//         {
-//             department_id:1,
-//             name: 'd1',
-//             desc:"desc for department1",
-//             created_at: Date.now(),
-//             updated_at: Date.now()
-//         },
+        },
 
-//         {
-//             department_id:2,
-//             name: 'd2',
-//             desc:"desc for department2",
-//             created_at: Date.now(),
-//             updated_at: Date.now()
+        {
+            ingredient_id:2,
+            userId: 1,
+            favs:"desc for department2",
+            grocery_id: 1,
 
-//         },
-//     ]
 
-// }
+        },
+        {
+            ingredient_id:3,
+            userId: 1,
+            favs:"desc for department2",
+            grocery_id: 1,
+
+
+        },
+        {
+            ingredient_id:4,
+            userId: 1,
+            favs:"desc for department2",
+            grocery_id: 1,
+
+
+        },
+        {
+            ingredient_id:5,
+            userId: 1,
+            favs:"desc for department2",
+            grocery_id: 1,
+
+
+        }
+    ]
+
+}

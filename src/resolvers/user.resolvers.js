@@ -10,7 +10,10 @@ export default {
       if (!args.id) {
         return users;
       }
-      return users.filter((d)=>{
+
+      // don't like lines like that, hard to keep in mind
+      // also can be replaced with lodash method
+      return users.filter((d) => {
         return d.userId == args.id;
       })
     },
