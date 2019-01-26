@@ -44,28 +44,31 @@ const getUsers = () => {
   return users;
 };
 
-// items
 
-// I can't find methods for this in the fetch
-
-// const getItems = () => {
-//  const items = graphQL.getItems ();
-//  return items;
-// }
+const getItems = () => {
+ const items = graphQL.getItemsGraphQL();
+ return items;
+}
 
 // favorites
-// const getFavorites = () => {
-//  const favorites = graphQL.getFavorites ();
-//  return favorites;
-// }
+const getFavorites = () => {
+ const favorites = graphQL.getFavoritesGraphQL();
+ return favorites;
+}
 
 
 // userGrocery
-
+const getUserGrocery = () => {
+ const usergrocery = graphQL.getUserGroceryGraphQL();
+ return usergrocery;
+}
 
 module.exports = {
   getDepartments,
   getGroceries,
   getIngredients,
   getUsers,
+  getFavorites,
+  getItems,
+  getUserGrocery
 };
