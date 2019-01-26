@@ -54,10 +54,10 @@ const getUsers = () => {
 // }
 
 // favorites
-// const getFavorites = () => {
-//  const favorites = graphQL.getFavorites ();
-//  return favorites;
-// }
+const getFavorites = () => {
+ const favorites = graphQL.getFavoritesGraphQL();
+ return favorites;
+}
 
 
 // userGrocery
@@ -68,4 +68,5 @@ module.exports = {
   getGroceries,
   getIngredients,
   getUsers,
+  getFavorites
 };
