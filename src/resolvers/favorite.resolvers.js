@@ -1,4 +1,3 @@
-// import data from '../data/favorite.data';
 import { getFavoritesGraphQL } from '../data/selector';
 
 export default {
