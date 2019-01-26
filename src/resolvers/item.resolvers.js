@@ -1,4 +1,3 @@
-// import data from '../data/item.data';
 import { getItems } from '../data/selector';
 
 export default {
