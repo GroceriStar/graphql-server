@@ -44,9 +44,6 @@ const getUsers = () => {
   return users;
 };
 
-// items
-
-// I can't find methods for this in the fetch
 
 const getItems = () => {
  const items = graphQL.getItemsGraphQL();
