@@ -1,5 +1,4 @@
-// import getGroceries from '../data/grocery.data';
-import { getGroceries } from '../data/selector';
+import { getGroceries, getGroceryByNameWithDepAndIngKey, getUltimateGrocery } from '../data/selector';
 
 export default {
   Query: {
