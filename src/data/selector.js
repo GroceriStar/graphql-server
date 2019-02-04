@@ -1,7 +1,7 @@
 // this is a file where we'll keep methods, that we using from `fetch` plugin
 // it will save time for us later.
 
-const { graphQL, gsLoopback } = require('@groceristar/groceristar-fetch');
+const { graphQL, gsLoopback, groceristar } = require('@groceristar/groceristar-fetch');
 
 // departments
 
@@ -63,6 +63,12 @@ const getUserGrocery = () => {
  return usergrocery;
 }
 
+
+//groceristar
+function getGroceryByNameWithDepAndIngKey(name){
+  return groceristar.getGroceryByNameWithDepAndIngKey(name);
+};
+
 // GS Loopback
 function getUltimateGrocery(){
   return gsLoopback.getUltimateGrocery();
@@ -85,6 +91,8 @@ module.exports = {
   getFavorites,
   getItems,
   getUserGrocery,
+
+  getGroceryByNameWithDepAndIngKey,
 
   getUltimateGrocery,
   getGLwithUserRelations,
