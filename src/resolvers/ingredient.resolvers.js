@@ -1,11 +1,10 @@
-// import getIngredients from '../data/ingredient.data';
-import { getIngredients } from '../data/selector';
+import { getIngredients, getIngredientsSampleFromDB } from '../data/selector';
 
 export default {
   Query: {
 
     ingredient(parent, args, ctx, info) {
-      // fetch all the departments
+      // fetch all the ingredients
       const ingredients = getIngredients();
       if (!args.id) {
         return ingredients;
