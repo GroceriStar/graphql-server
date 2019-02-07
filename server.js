@@ -10,9 +10,8 @@ import {
   default as resolvers,
 } from './src/resolvers';
 
-
 const options = {
-  port: 3000,
+  port: process.env.PORT || 3000
 };
 
 const server = new GraphQLServer({
@@ -20,13 +19,16 @@ const server = new GraphQLServer({
   resolvers,
 });
 
-
-server.get('/status', (req, res) => {
+// to add routes you should use server.express 
+server.express.get('/status', (req, res) => {
   res.send({ status: 'ok' })
 })
 
-server
-  .start(options, () =>
+if (process.env.NODE_ENV !== 'test') {
+server.start(options, () =>
     console.log(`Server is running ⚡ on localhost:${options.port}`)
   )
   .catch(err => console.error('connection Error', err));
+}
+
+module.exports = server;
