@@ -15,6 +15,11 @@ const getDepartments = () => {
 };
 
 
+
+
+
+
+
 // grocery lists
 const getGroceries = () => {
   const groceries = graphQL.getGroceryGraphQL();
@@ -24,6 +29,9 @@ const getGroceries = () => {
 
   return groceries;
 };
+
+
+
 
 
 // ingredients
@@ -36,6 +44,9 @@ const getIngredients = () => {
   //const ingredients = graphQL.getIngredientsGraphQLKey();
   return ingredients;
 };
+
+
+
 
 // users
 const getUsers = () => {
