@@ -1,11 +1,10 @@
-import data from '../data/usergrocery.data';
-// import { getDepartments } from '../data/selector';
+import { getUserGrocery } from '../data/selector';
 
 export default {
   Query: {
     user_grocery(parent, args, ctx, info) {
 
-      console.log(data.usergroceries)
+      console.log(getUserGrocery())
 
       // fetch all the departments
       // const departments = getDepartments();

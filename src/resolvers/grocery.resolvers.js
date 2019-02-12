@@ -1,11 +1,14 @@
-// import getGroceries from '../data/grocery.data';
-import { getGroceries } from '../data/selector';
+import { 
+  getGroceries,
+  getGroceryByNameWithDepAndIngKey,
+  getUltimateGrocery 
+} from '../data/selector';
 
 export default {
   Query: {
 
     grocery(parent, args, ctx, info) {
-      // fetch all the departments
+      // fetch all the groceries
       const groceries = getGroceries();
       if (!args.id) {
         return groceries;

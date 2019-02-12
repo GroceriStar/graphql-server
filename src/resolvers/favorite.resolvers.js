@@ -1,12 +1,11 @@
-import data from '../data/favorite.data';
-// import { getGroceries } from '../data/selector';
+import { getFavoritesGraphQL } from '../data/selector';
 
 export default {
   Query: {
 
     favorite(parent, args, ctx, info) {
 
-      console.log(data.favorites)
+      console.log(getFavoritesGraphQL())
       // fetch all the departments
       // const departments = getDepartments();
       // if (!args.id) {

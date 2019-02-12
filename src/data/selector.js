@@ -1,7 +1,7 @@
 // this is a file where we'll keep methods, that we using from `fetch` plugin
 // it will save time for us later.
 
-const { graphQL } = require('@groceristar/groceristar-fetch');
+const { graphQL, gsLoopback, groceristar } = require('@groceristar/groceristar-fetch');
 
 // departments
 
@@ -55,23 +55,43 @@ const getUsers = () => {
   return users;
 };
 
-// items
 
-// I can't find methods for this in the fetch
-
-// const getItems = () => {
-//  const items = graphQL.getItems ();
-//  return items;
-// }
+const getItems = () => {
+ const items = graphQL.getItemsGraphQL();
+ return items;
+}
 
 // favorites
-// const getFavorites = () => {
-//  const favorites = graphQL.getFavorites ();
-//  return favorites;
-// }
+const getFavorites = () => {
+ const favorites = graphQL.getFavoritesGraphQL();
+ return favorites;
+}
 
 
 // userGrocery
+const getUserGrocery = () => {
+ const usergrocery = graphQL.getUserGroceryGraphQL();
+ return usergrocery;
+}
+
+
+//groceristar
+function getGroceryByNameWithDepAndIngKey(name){
+  return groceristar.getGroceryByNameWithDepAndIngKey(name);
+};
+
+// GS Loopback
+function getUltimateGrocery(){
+  return gsLoopback.getUltimateGrocery();
+};
+
+function getGLwithUserRelations(){
+  return gsLoopback.getGLwithUserRelations();
+};
+
+function getIngredientsSampleFromDB(){
+  return gsLoopback.getIngredientsSampleFromDB();
+};
 
 
 module.exports = {
@@ -79,4 +99,13 @@ module.exports = {
   getGroceries,
   getIngredients,
   getUsers,
+  getFavorites,
+  getItems,
+  getUserGrocery,
+
+  getGroceryByNameWithDepAndIngKey,
+
+  getUltimateGrocery,
+  getGLwithUserRelations,
+  getIngredientsSampleFromDB,
 };

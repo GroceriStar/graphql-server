@@ -1,3 +1,17 @@
+#At our recipe related system i find this example.
+#not sure if it right. but can give some information.
+#I also think that having item without measurements - it's not a completed picture
+#{
+#				"id"      : "..",  //where it comes from
+#				"name"   : "Beans",
+#				"recipeId" : ["1"], //where it comes from
+#				"type"     : "simple", //where it comes from
+#				"units"    : "4",  //where it comes from
+#				"done"     : "0",
+#				"delete"   : "0"
+#			},
+
+
 type Item {
     item_id: Int!
     name: String!
