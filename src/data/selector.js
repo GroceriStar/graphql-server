@@ -61,6 +61,9 @@ const getItems = () => {
  return items;
 }
 
+
+
+
 // favorites
 const getFavorites = () => {
  const favorites = graphQL.getFavoritesGraphQL();
@@ -68,11 +71,16 @@ const getFavorites = () => {
 }
 
 
+
+
 // userGrocery
 const getUserGrocery = () => {
  const usergrocery = graphQL.getUserGroceryGraphQL();
  return usergrocery;
 }
+
+
+
 
 
 //groceristar
@@ -92,6 +100,9 @@ function getGLwithUserRelations(){
 function getIngredientsSampleFromDB(){
   return gsLoopback.getIngredientsSampleFromDB();
 };
+
+
+
 
 
 module.exports = {

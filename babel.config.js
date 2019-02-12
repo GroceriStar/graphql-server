@@ -11,6 +11,9 @@ const presets = [
 
 const plugins = [
   [
+    require.resolve('@babel/plugin-proposal-class-properties')
+  ],
+  [
     require.resolve('babel-plugin-module-resolver'),
     {
       root: ["./src/"],
