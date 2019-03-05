@@ -5,10 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js --exec babel-node",
-    "lint": "eslint . --fix",
-    "lint:i": "eslint src",
+    "lint": "standard",
+    "lint:i": "standard src",
     "test": "NODE_ENV=test jest --forceExit --detectOpenHandles",
-    "watch": "NODE_ENV=test jest --forceExit --watch --detectOpenHandles"
+    "watch": "NODE_ENV=test jest --forceExit --watch --detectOpenHandles",
+    "code-fix": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -29,15 +30,12 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.0.0",
     "babel-plugin-module-resolver": "^3.1.2",
-    "eslint": "^5.12.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
     "nodemon": "^1.18.9",
     "regenerator-runtime": "^0.13.1",
     "standard": "^12.0.1"
   },
   "dependencies": {
-    "@groceristar/groceristar-fetch": "^1.1.48",
+    "@groceristar/groceristar-fetch": "^1.2.8",
     "babel-preset-env": "^1.7.0",
     "express": "^4.16.4",
     "graphql-yoga": "^1.16.9",
