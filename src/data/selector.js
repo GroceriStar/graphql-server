@@ -1,7 +1,7 @@
 // this is a file where we'll keep methods, that we using from `fetch` plugin
 // it will save time for us later.
 
-const { graphQL, gsLoopback, groceristar } = require('@groceristar/groceristar-fetch');
+// const { graphQL, gsLoopback, groceristar } = require('@groceristar/groceristar-fetch');
 
 // departments
 
