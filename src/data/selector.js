@@ -9,7 +9,7 @@ const getDepartments = () => {
   // const departments = graphQL.getDepartments();
   // @TODO pick one of this methods. First return id as Integer, second return it as `key`
 
-  const departments = graphQL.getDepartmentsGraphQL();
+  // const departments = graphQL.getDepartmentsGraphQL();
   // const departments = graphQL.getDepartmentsGraphQLKey();
   return departments;
 };
@@ -22,7 +22,7 @@ const getDepartments = () => {
 
 // grocery lists
 const getGroceries = () => {
-  const groceries = graphQL.getGroceryGraphQL();
+  // const groceries = graphQL.getGroceryGraphQL();
   //const groceries = graphQL.getGroceryGraphQLKey();
 //   const groceries = graphQL.getGroceryGraphQL();
 
@@ -39,7 +39,7 @@ const getIngredients = () => {
   // in order to make debuging process more quickier. I'm limiting right now number of returning ingredients
   // @TODO address that later.
   const limit = true;
-  const ingredients = graphQL. getIngredientsGraphQL(limit);
+  // const ingredients = graphQL. getIngredientsGraphQL(limit);
   //const ingredients = graphQL.getIngredientsGraphQL();
   //const ingredients = graphQL.getIngredientsGraphQLKey();
   return ingredients;
@@ -50,14 +50,14 @@ const getIngredients = () => {
 
 // users
 const getUsers = () => {
-  const users = graphQL.getUsersGraphQL();
+  // const users = graphQL.getUsersGraphQL();
   //const users = graphQL.getUsersGraphQLKey();
   return users;
 };
 
 
 const getItems = () => {
- const items = graphQL.getItemsGraphQL();
+//  const items = graphQL.getItemsGraphQL();
  return items;
 }
 
@@ -66,7 +66,7 @@ const getItems = () => {
 
 // favorites
 const getFavorites = () => {
- const favorites = graphQL.getFavoritesGraphQL();
+//  const favorites = graphQL.getFavoritesGraphQL();
  return favorites;
 }
 
@@ -75,7 +75,7 @@ const getFavorites = () => {
 
 // userGrocery
 const getUserGrocery = () => {
- const usergrocery = graphQL.getUserGroceryGraphQL();
+//  const usergrocery = graphQL.getUserGroceryGraphQL();
  return usergrocery;
 }
 
@@ -85,20 +85,20 @@ const getUserGrocery = () => {
 
 //groceristar
 function getGroceryByNameWithDepAndIngKey(name){
-  return groceristar.getGroceryByNameWithDepAndIngKey(name);
+  // return groceristar.getGroceryByNameWithDepAndIngKey(name);
 };
 
 // GS Loopback
 function getUltimateGrocery(){
-  return gsLoopback.getUltimateGrocery();
+  // return gsLoopback.getUltimateGrocery();
 };
 
 function getGLwithUserRelations(){
-  return gsLoopback.getGLwithUserRelations();
+  // return gsLoopback.getGLwithUserRelations();
 };
 
 function getIngredientsSampleFromDB(){
-  return gsLoopback.getIngredientsSampleFromDB();
+  // return gsLoopback.getIngredientsSampleFromDB();
 };
 
 
