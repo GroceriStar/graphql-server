@@ -2,7 +2,7 @@
 // it will save time for us later.
 
 // const { graphQL, gsLoopback, groceristar } = require('@groceristar/groceristar-fetch');
-  const {usergrocery,ingredients,favorites,items,departments,grocery,users}=require('@groceristar/sd-wrapper')
+  const { usergrocery, ingredients, favorites, items, departments, grocery, users }=require('@groceristar/sd-wrapper')
 
 // departments
 
