@@ -28,7 +28,7 @@ const getGroceries = () => {
 //   const groceries = graphQL.getGroceryGraphQL();
 
 
-  return groceries;
+  return grocery;
 };
 
 
