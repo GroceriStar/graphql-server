@@ -773,26 +773,19 @@
     minimist "^1.2.0"
 
 "@groceristar/groceristar-fetch@^2.0.0":
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-2.1.10.tgz#3c76c156392bad04554b79f86529d4ebd8482c12"
-  integrity sha512-026T60LIqj7/Amd9GUnrV2yF9qurrb1N+pbR+vbo84Mi2ZHzZ/FTJqzpsqzLFU4DPhtPNhsHE/PKgTZi4yd0qg==
+  version "2.1.12"
+  resolved "https://registry.yarnpkg.com/@groceristar/groceristar-fetch/-/groceristar-fetch-2.1.12.tgz#0de465485752ee4f1b0444393186f6b84163b2dc"
+  integrity sha512-7oDBkSH1qFg4CdUhYUH2iwg5OP9CMf58hcpxZQ4X9j3C0F9plR4cUIpaZsTzRmIWrouvhG54ICJnik7KFH3BPQ==
   dependencies:
-    "@groceristar/sd-wrapper" "^3.0.0"
+    "@groceristar/sd-wrapper" "^4.0.0"
     dayjs "^1.8.12"
     fs "0.0.2"
     lodash "^4.17.10"
+    raven-js "^3.27.1"
     underscore "^1.9.1"
     uuid "^3.3.2"
 
-"@groceristar/sd-wrapper@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-3.0.0.tgz#e75c14a2aca98783898626399058895a815513a0"
-  integrity sha512-MCvr1WLkILp5IWuH8jSq9nE4XBds3Y56cZgjZoKrEbRuYL6puxFcaYm2YP6ShoR3x8Y7FrIZWEPvzJ4Y1lRt7w==
-  dependencies:
-    path "^0.12.7"
-    uuid "^3.3.2"
-
-"@groceristar/sd-wrapper@^4.0.2":
+"@groceristar/sd-wrapper@^4.0.0", "@groceristar/sd-wrapper@^4.0.2":
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-4.5.0.tgz#883ee058711e9db66d1fd16303cb6d102abe8576"
   integrity sha512-+2koBC7aRZWs0WDlC0MzUM5pDkmmfrZ6WvhO9o2QgDC+X8378HE/7GUaNQ8VirgYbSIsZ8Tc3c/MhfrwNMh/vA==
@@ -5662,6 +5655,11 @@ range-parser@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
+
+raven-js@^3.27.1:
+  version "3.27.2"
+  resolved "https://registry.yarnpkg.com/raven-js/-/raven-js-3.27.2.tgz#6c33df952026cd73820aa999122b7b7737a66775"
+  integrity sha512-mFWQcXnhRFEQe5HeFroPaEghlnqy7F5E2J3Fsab189ondqUzcjwSVi7el7F36cr6PvQYXoZ1P2F5CSF2/azeMQ==
 
 raw-body@2.4.0:
   version "2.4.0"
