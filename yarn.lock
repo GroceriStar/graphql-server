@@ -786,9 +786,9 @@
     uuid "^3.3.2"
 
 "@groceristar/sd-wrapper@^4.0.0", "@groceristar/sd-wrapper@^4.0.2":
-  version "4.9.1"
-  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-4.9.1.tgz#8eae0c22236983fa642f775268841cf08b2260d9"
-  integrity sha512-qPwvAzLtlQx/dJU1FSnPFH3QBj/P5sNeQu1AafTPxLR6QES4MMMkxKgKN9Radqh8Bwh1RGA2SktCGCx0rOnEPw==
+  version "4.9.2"
+  resolved "https://registry.yarnpkg.com/@groceristar/sd-wrapper/-/sd-wrapper-4.9.2.tgz#3c3b14f3f51173723b25a0b6adb39eabceeb6019"
+  integrity sha512-LQQnQURa/Q6ZUD1hi+aGFiDfRjmWlLyq0JP841RG6AjoakXvhjwbEReIrJ4viwxRwuIgnjYqTKs+yMRXFfRB1w==
   dependencies:
     csv-parser "^2.3.0"
     dayjs "^1.8.14"
