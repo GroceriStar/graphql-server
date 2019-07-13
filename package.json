@@ -32,7 +32,7 @@
     "babel-plugin-module-resolver": "3.2.0",
     "nodemon": "1.19.1",
     "regenerator-runtime": "0.13.2",
-    "standard": "13.0.1"
+    "standard": "13.0.2"
   },
   "dependencies": {
     "@groceristar/groceristar-fetch": "^2.0.0",
