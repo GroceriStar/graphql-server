@@ -9,7 +9,9 @@
     "lint:i": "standard src",
     "test": "NODE_ENV=test jest --forceExit --detectOpenHandles",
     "watch": "NODE_ENV=test jest --forceExit --watch --detectOpenHandles",
-    "code-fix": "standard --fix"
+    "code-fix": "standard --fix",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -42,6 +44,8 @@
     "graphql-yoga": "^1.16.9",
     "jest": "^24.0.0",
     "merge-graphql-schemas": "^1.5.8",
-    "supertest": "^4.0.0"
-  }
+    "supertest": "^4.0.0",
+    "snyk": "^1.231.0"
+  },
+  "snyk": true
 }
