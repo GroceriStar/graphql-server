@@ -12,3 +12,7 @@ patch:
         patched: '2019-10-05T21:26:51.912Z'
     - '@groceristar/groceristar-fetch > @groceristar/sd-wrapper > snyk > proxy-agent > pac-proxy-agent > https-proxy-agent':
         patched: '2019-10-05T21:26:51.912Z'
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-07T21:32:36.728Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-07T21:32:36.728Z'
