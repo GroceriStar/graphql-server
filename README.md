@@ -4,7 +4,7 @@
 ### Data
 
 #### Static data
-imported from `@groceristar/groceristar-fetch` plugin
+imported from `@groceristar/groceristar-fetch` plugin and partially from Food-static-data: https://github.com/GroceriStar/sd
 More about this plugin [here](https://medium.com/groceristar/groceristar-fetch-small-module-that-weve-created-8b4a62bd5d7b):
 
 #### Database schema
