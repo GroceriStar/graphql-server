@@ -1,9 +1,8 @@
-import { getItems } from '../data/selector';
+import { getItems } from '../data/selector'
 
 export default {
   Query: {
-    item(parent, args, ctx, info) {
-
+    item (parent, args, ctx, info) {
       console.log(getItems())
       // fetch all the departments
       // const departments = getDepartments();
@@ -16,7 +15,7 @@ export default {
       // return departments.filter((d) => {
       //   return d.department_id == args.id;
       // })
-    },
+    }
 
-  },
-};
+  }
+}

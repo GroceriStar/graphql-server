@@ -1,10 +1,9 @@
-import { getFavoritesGraphQL } from '../data/selector';
+import { getFavoritesGraphQL } from '../data/selector'
 
 export default {
   Query: {
 
-    favorite(parent, args, ctx, info) {
-
+    favorite (parent, args, ctx, info) {
       console.log(getFavoritesGraphQL())
       // fetch all the departments
       // const departments = getDepartments();
@@ -17,7 +16,7 @@ export default {
       // return departments.filter((d) => {
       //   return d.department_id == args.id;
       // })
-    },
+    }
 
-  },
-};
+  }
+}

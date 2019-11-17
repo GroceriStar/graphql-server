@@ -1,21 +1,21 @@
-import { getIngredients, getIngredientsSampleFromDB } from '../data/selector';
+import { getIngredients, getIngredientsSampleFromDB } from '../data/selector'
 
 export default {
   Query: {
 
-    ingredient(parent, args, ctx, info) {
+    ingredient (parent, args, ctx, info) {
       // fetch all the ingredients
-      const ingredients = getIngredients();
+      const ingredients = getIngredients()
       if (!args.id) {
-        return ingredients;
+        return ingredients
       }
 
       // don't like lines like that, hard to keep in mind
       // also can be replaced with lodash method
       return ingredients.filter((d) => {
-        return d.ingredient_id == args.id;
+        return d.ingredient_id == args.id
       })
-    },
+    }
 
-  },
-};
+  }
+}
