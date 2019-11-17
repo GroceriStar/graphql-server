@@ -10,8 +10,7 @@
     "test": "NODE_ENV=test jest --forceExit --detectOpenHandles",
     "watch": "NODE_ENV=test jest --forceExit --watch --detectOpenHandles",
     "code-fix": "standard --fix",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -37,15 +36,14 @@
     "standard": "14.3.1"
   },
   "dependencies": {
-    "@groceristar/groceristar-fetch": "^2.0.0",
-    "@groceristar/sd-wrapper": "^4.0.2",
-    "babel-preset-env": "^1.7.0",
-    "express": "^4.16.4",
-    "graphql-yoga": "^1.16.9",
-    "jest": "^24.0.0",
-    "merge-graphql-schemas": "^1.5.8",
-    "supertest": "^4.0.0",
-    "snyk": "^1.232.0"
+    "@groceristar/groceristar-fetch": "^2.2.7",
+    "@groceristar/sd-wrapper": "^4.15.0",
+    "express": "^4.17.1",
+    "graphql-yoga": "^1.18.3",
+    "jest": "^24.9.0",
+    "merge-graphql-schemas": "^1.7.3",
+    "snyk": "^1.232.0",
+    "supertest": "^4.0.2"
   },
   "snyk": true
 }
