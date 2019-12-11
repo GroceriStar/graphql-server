@@ -10,7 +10,8 @@
     "test": "NODE_ENV=test jest --forceExit --detectOpenHandles",
     "watch": "NODE_ENV=test jest --forceExit --watch --detectOpenHandles",
     "code-fix": "standard --fix",
-    "snyk-protect": "snyk protect"
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -42,7 +43,7 @@
     "graphql-yoga": "^1.18.3",
     "jest": "^24.9.0",
     "merge-graphql-schemas": "^1.7.3",
-    "snyk": "^1.232.0",
+    "snyk": "^1.258.2",
     "supertest": "^4.0.2"
   },
   "snyk": true
