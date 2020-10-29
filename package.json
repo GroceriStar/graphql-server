@@ -44,7 +44,7 @@
     "jest": "^25.0.0",
     "merge-graphql-schemas": "^1.7.3",
     "snyk": "^1.258.2",
-    "supertest": "^4.0.2"
+    "supertest": "^6.0.0"
   },
   "snyk": true
 }
