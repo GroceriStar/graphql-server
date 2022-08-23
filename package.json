@@ -10,7 +10,7 @@
     "test": "NODE_ENV=test jest --forceExit --detectOpenHandles",
     "watch": "NODE_ENV=test jest --forceExit --watch --detectOpenHandles",
     "code-fix": "standard --fix",
-    "snyk-protect": "snyk protect",
+    "snyk-protect": "snyk-protect",
     "prepublish": "npm run snyk-protect"
   },
   "repository": {
@@ -40,11 +40,11 @@
     "@groceristar/groceristar-fetch": "^2.2.7",
     "@groceristar/sd-wrapper": "^4.15.0",
     "express": "^4.17.1",
-    "graphql-yoga": "^1.18.3",
+    "graphql-yoga": "^2.0.0",
     "jest": "^25.0.0",
     "merge-graphql-schemas": "^1.7.3",
-    "snyk": "^1.258.2",
-    "supertest": "^4.0.2"
+    "supertest": "^4.0.2",
+    "@snyk/protect": "latest"
   },
   "snyk": true
 }
