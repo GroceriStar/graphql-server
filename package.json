@@ -40,11 +40,11 @@
     "@groceristar/groceristar-fetch": "^2.2.7",
     "@groceristar/sd-wrapper": "^4.15.0",
     "express": "^4.17.1",
-    "graphql-yoga": "^1.18.3",
-    "jest": "^25.0.0",
+    "graphql-yoga": "^2.0.0",
+    "jest": "^27.0.0",
     "merge-graphql-schemas": "^1.7.3",
-    "snyk": "^1.258.2",
-    "supertest": "^4.0.2"
+    "snyk": "^1.996.0",
+    "supertest": "^6.2.0"
   },
   "snyk": true
 }
