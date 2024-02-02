@@ -42,7 +42,7 @@
     "express": "^4.17.1",
     "graphql-yoga": "^1.18.3",
     "jest": "^25.0.0",
-    "merge-graphql-schemas": "^1.7.3",
+    "merge-graphql-schemas": "^1.7.8",
     "snyk": "^1.258.2",
     "supertest": "^4.0.2"
   },
