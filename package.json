@@ -39,7 +39,7 @@
   "dependencies": {
     "@groceristar/groceristar-fetch": "^2.2.7",
     "@groceristar/sd-wrapper": "^4.15.0",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "graphql-yoga": "^1.18.3",
     "jest": "^25.0.0",
     "merge-graphql-schemas": "^1.7.3",
